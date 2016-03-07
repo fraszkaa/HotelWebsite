@@ -1,7 +1,25 @@
 body {
-    padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #eee;
+    background-color: #6c6c6c;
+    margin-bottom: 60px;
+}
+
+.navbar-przyciski {
+    padding-top: 27.5px !important;
+    padding-bottom: 27.5px !important;
+}
+
+#kopirajt {
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #212121;
 }
 
 .form-signin {

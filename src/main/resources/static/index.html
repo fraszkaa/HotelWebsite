@@ -4,18 +4,44 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AngularJS Basic HTTP Authentication Example</title>
+    <title>Hotel</title>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/tooplate_style.css" rel="stylesheet" type="text/css"/>
+
+
 </head>
+
 <body>
-
-
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header" style="background-color: white">
+            <img src="css/images/logo.png"/>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#" class="navbar-przyciski"
+                                  style="padding-bottom: 20px !important; padding-top: 20px !important;"><span
+                    class="glyphicon glyphicon-home" style="font-size: 30px;"></span></a></li>
+            <li><a href="#" class="navbar-przyciski">Page 1</a></li>
+            <li><a href="#" class="navbar-przyciski">Page 2</a></li>
+            <li><a href="#" class="navbar-przyciski">Page 3</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="navbar-przyciski"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#" class="navbar-przyciski"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</nav>
 <div class="container">
     <div class="jumbotron">
         <div ng-view></div>
     </div>
 </div>
+<footer class="footer">
+    <div class="container">
+        <p id="kopirajt" class="text-muted">Copyright &copy; 2016 <a href="#">Hotel</a> - All Rights Reserved</p>
+    </div>
+</footer>
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script src="http://code.angularjs.org/1.2.20/angular.js"></script>
 <script src="http://code.angularjs.org/1.2.20/angular-route.js"></script>

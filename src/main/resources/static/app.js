@@ -42,9 +42,9 @@ angular.module('BasicHttpAuthExample', [
 
             $rootScope.$on('$locationChangeStart', function (event, next, current) {
                 // redirect to login page if not logged in
-                if ($location.path() !== '/login' && !$rootScope.globals.currentUser && $location.path() !== '/register') {
-                    $location.path('/login');
-                }
+                //if ($location.path() !== '/login' && !$rootScope.globals.currentUser && $location.path() !== '/register') {
+                //    $location.path('/login');
+                //}
                 //else if($location.path() == '/login' || $location.path() == '/register'){
                 //     $location.path('/');
                 //}
