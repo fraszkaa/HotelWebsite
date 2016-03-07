@@ -1,6 +1,75 @@
-<h1>Home</h1>
-<p>You're logged in!!</p>
-<p>Your username: {{username}}</p>
+<body>
 
-<p><a href="#/login">Logout</a></a></p>
-<div ng-show="error" class="alert alert-danger">{{error}}</div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="myCarousel" data-slide-to="1"></li>
+        <li data-target="myCarousel" data-slide-to="2"></li>
+        <li data-target="myCarousel" data-slide-to="3"></li>
+        <li data-target="myCarousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img class="first-slide" src="css/images/slider.jpg" alt="First slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1 class="header">Hotel</h1>
+                    <p class="carousel_text">Hotel***Artur położony jest w Krakowie przy ulicy Aleksandry 30, przy trasie międzynarodowej E4 i obwodnicy krakowskiej.</p>
+                    <p class="carousel_text">Hotel posiada dogodne i szybkie połączenia z Wawelem (6 km), Wieliczką (3 km), Kazimierzem (4 km) i Portem Lotniczym w Balicach (22 km).</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Czytaj więcej</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img class="second-slide" src="css/images/slider1.jpg" alt="Second slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1 class="header">Recepcja</h1>
+                    <p class="carousel_text">Miejsce pierwszego kontaktu gościa z firmą. Małe biuro lub kontuar, mieszczący się w pobliżu wejścia do firmy lub organizacji. </p>
+                    <p class="carousel_text">Jest to miejsce, którego głównym zadaniem jest przyjmowanie: interesantów, klientów, korespondencji, pozostawionych przedmiotów. Cały proces administrowania zaczyna się więc od recepcji. </p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Czytaj więcej</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img class="third-slide" src="css/images/slider2.jpg" alt="Third slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1 class="header">Restauracja</h1>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Więcej</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img class="third-slide" src="css/images/slider3.jpg" alt="Third slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1 class="header">Pokoje</h1>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Więcej</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img class="third-slide" src="css/images/slider4.jpg" alt="Third slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1 class="header">Sala konferencyjna</h1>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Więcej</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <span class="left carousel-control" data-target="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </span>
+    <span class="right carousel-control" data-target="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </span>
+
+</span>
+</div><!-- /.carousel -->
+
+</body>

@@ -27,9 +27,9 @@ angular.module('BasicHttpAuthExample', [
             .when('/', {
                 controller: 'HomeController',
                 templateUrl: 'modules/home/home.html'
-            })
+            });
 
-            .otherwise({redirectTo: '/login'});
+            /*.otherwise({redirectTo: '/login'});*/
     }])
 
     .run(['$rootScope', '$location', '$cookieStore', '$http',

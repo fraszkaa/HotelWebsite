@@ -5,7 +5,7 @@ angular.module('Home')
     .controller('HomeController',
         ['$scope', 'HomeService',
             function ($scope, HomeService) {
-                $scope.ShowUser = function () {
+               /* $scope.ShowUser = function () {
                     HomeService.GetLoggedUser(function (response) {
                         if (response.success) {
                             $scope.username = response.data.username;
@@ -14,9 +14,11 @@ angular.module('Home')
                             $scope.error = response.message;
                         }
                     });
-                };
+                };*/
 
 
                 $scope.ShowUser()
             }
         ]);
+
+
