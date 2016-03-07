@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: Arial, "Trebuchet MS", sans-serif;
+    color: #565656;
+    background: #212121;
+    left bottom repeat-x;
+}
+
+img.home {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    padding-top: 10px;
+}
+
+img.slider {
+    width: 960px;
+    height: 353px;
+}
+
+.shell {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#logo {
+    float: left;
+    width: 201px;
+    height: 75px;
+    text-align: left;
+}
+
+#logo a {
+    float: left;
+    width: 201px;
+    height: 75px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -4000px;
+    background: url(images/logo.png);
+}
+
+#header {
+    background: url(images/header-template.jpg) left top repeat-x;
+    height: 75px;
+}
+
+#navigation {
+    float: right;
+    padding-top: 5px;
+    background: url(images/navigation-separator.jpg) right 1px no-repeat;
+}
+
+#navigation ul {
+    list-style: none;
+    padding-right: 1px;
+}
+
+#navigation ul li {
+    float: left;
+    padding-left: 1px;
+    background: url(images/navigation-separator.jpg) left 1px no-repeat;
+}
+
+#navigation ul li a {
+    float: left;
+    padding: 0 16px 0 15px;
+    height: 64px;
+    line-height: 64px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #272727;
+    text-decoration: none;
+
+}
+
+#navigation ul li a.active {
+    background: url(images/navigation-active.gif);
+    color: #fff;
+}
+
+#navigation ul li a span {
+    float: left;
+}
+
+#navigation ul li a:hover {
+    background: url(images/navigation-active.gif);
+
+}
+
+#intro {
+    background: url(images/intro.gif) left top repeat-x;
+    height: 418px;
+    padding-top: 22px;
+}
+
+#intro .slider-holder {
+    width: 960px;
+    height: 353px;
+    position: relative;
+    overflow: hidden;
+}
+
+#intro .slider-holder ul, .jcarousel-clip {
+    list-style: none;
+    width: 960px;
+    height: 353px;
+    position: relative;
+    overflow: hidden;
+}
+
+#intro .slider-holder ul li {
+    float: left;
+    position: relative;
+    width: 960px;
+    height: 353px;
+    list-style: none;
+}
+
+#intro .slider-holder .slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#intro .slider-holder .slider-image img {
+    border: 1px solid #a7a0a0;
+}
+
+#intro .slider-holder .offer-data {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    height: 317px;
+    width: 230px;
+    background: url(images/semi-transparent.png);
+    padding: 34px 20px 0 25px;
+}
+
+#intro .slider-holder .offer-data .entry {
+    height: 212px;
+}
+
+#intro .slider-holder .offer-data p {
+    color: #dfd5d5;
+    line-height: 18px;
+    padding-bottom: 18px;
+    text-align: justify;
+}
+
+#intro .slider-holder .offer-data p a {
+    color: #dfd5d5;
+}
+
+#intro .slider-holder .offer-data .buttons {
+    padding-right: 4px;
+}
+
+#intro .slider-holder .offer-data .buttons .button, #intro .slider-holder .offer-data .buttons .button span {
+    height: 29px;
+    line-height: 29px;
+    float: left;
+}
+
+#intro .slider-holder .offer-data .buttons .button {
+    float: right;
+    background: url(images/intro-button.jpg) left top repeat-x;
+    border: 1px solid #434340;
+    padding: 0 8px;
+}
+
+#intro .slider-holder .offer-data .buttons .button span {
+    background: url(images/intro-button-span.jpg) left top no-repeat;
+    padding-left: 7px;
+}
+
+#intro .slider-navigation {
+    height: 24px;
+    background: url(images/intro-shadow.jpg) left top no-repeat;
+    padding-top: 36px;
+}
+
+#intro .slider-navigation ul {
+    list-style: none;
+    margin-left: 420px;
+}
+
+#intro .slider-navigation ul li {
+    float: left;
+}
+
+#intro .slider-navigation ul li a {
+    background: url(images/slider-navigation-normal.jpg);
+    width: 19px;
+    height: 20px;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -4000px;
+    text-decoration: none;
+}
+
+#intro .slider-navigation ul li a.active, #intro .slider-navigation ul li a:hover {
+    background: url(images/slider-navigation-active.jpg);
+}
+
+.footer {
+    background: url(images/footer.jpg) left top repeat-x;
+    color: #b3adad;
+    padding: 24px 4px;
+    font-size: 10px;
+    font-family: Verdana, Arial, Sans-Serif;
+}
+
+.footer, .footer a {
+    color: #b3adad;
+    text-decoration: none;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+.footer .lf {
+    float: left;
+}
+
+.footer .rf {
+    float: left;
+}
+
+.footer form.rf {
+    float: right;
+}
+
+.footer form input {
+    background: url(images/header1.jpg) left top repeat-x;
+}
