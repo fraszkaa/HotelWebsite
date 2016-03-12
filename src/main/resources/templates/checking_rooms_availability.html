@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Spring Core</title>
+
+    <link rel="stylesheet" type="text/css" media="all"
+          href="../../css/gtvg.css" th:href="@{/css/gtvg.css}" />
+
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css.bootstrap.min.cs"
+          th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen"/>
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+
+    <link href="css/styles.css" rel="stylesheet"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <a href="/">
+            <div class="navbar-header" style="background-color: white">
+                <img src="css/images/logo.png"/>
+            </div>
+        </a>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#" class="navbar-przyciski"
+                                  style="padding-bottom: 20px !important; padding-top: 20px !important;"><span
+                    class="glyphicon glyphicon-home" style="font-size: 30px;"></span></a></li>
+            <li><a href="/room_availability" class="navbar-przyciski">Sprawdz dostepnosc</a></li>
+            <li><a href="#" class="navbar-przyciski">Page 2</a></li>
+            <li><a href="#" class="navbar-przyciski">Page 3</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/#/register" class="navbar-przyciski"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/#/login" class="navbar-przyciski"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</nav>
+<br/><br/>
+
+<div class="container" style="text-align: center">
+    <h2 style="font-family: 'Roboto', sans-serif; color: #212121">
+        Sprawdz dostepnosc wybranego typu pokoju
+    </h2>
+</div>
+<br/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-md-6" style="text-align: center">
+            <img class="img-responsive img-thumbnail img-center" src="css/images/2os.jpg" id="two_people"/>
+            <h4> Pokoj dwuosobowy </h4>
+            <input type="text" name="daterange_2os" value="01/05/2016 - 01/06/2015" />
+
+            <script type="text/javascript">
+                $(function() {
+                    $('input[name="daterange_2os"]').daterangepicker();
+                });
+            </script>
+
+        </div>
+        <div class="col-xs-6 col-md-6" style="text-align: center">
+            <img class="img-responsive img-thumbnail img-center" src="css/images/3os.jpg"/>
+            <h4> Pokoj trzyosobowy </h4>
+            <input type="text" name="daterange_3os" value="01/05/2016 - 01/06/2015" />
+
+            <script type="text/javascript">
+                $(function() {
+                    $('input[name="daterange_3os"]').daterangepicker();
+                });
+            </script>
+        </div>
+
+        <br/><br/>
+        <div style="text-align: center">
+            <button type="button" class="btn btn-default" style="width: 150px">Sprawdz</button>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <p id="kopirajt" class="text-muted">Copyright &copy; 2016 <a href="#">Hotel</a> - All Rights Reserved</p>
+    </div>
+</footer>
+</body>
+</html>

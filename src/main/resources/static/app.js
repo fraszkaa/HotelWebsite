@@ -23,7 +23,10 @@ angular.module('BasicHttpAuthExample', [
                 controller: 'RegistrationController',
                 templateUrl: 'modules/register/register.html'
             })
-
+            .when('/room_availability', {
+                controller: 'RoomAvailabilityController',
+                templateUrl: 'modules/room_availability/room_availability.html'
+            })
             .when('/', {
                 controller: 'HomeController',
                 templateUrl: 'modules/home/home.html'

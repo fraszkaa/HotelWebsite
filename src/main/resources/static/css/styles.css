@@ -99,3 +99,14 @@ body {
     height: 400px;
 }
 
+.center-block {
+    display: block;
+    height: 200px;
+    width: 200px;
+}
+
+.button-center {
+    margin: 0 auto;
+}
+
+.img-center {margin:0 auto;}
