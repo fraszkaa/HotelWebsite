@@ -13,7 +13,11 @@ public class RoomAvailabilityController {
 
     @RequestMapping(value = "/room_availability", method = RequestMethod.GET)
     public String checkRoomAvailability() {
-        System.out.println("Checking!");
+        return "checking_rooms_availability";
+    }
+
+    @RequestMapping(value = "/check_availability")
+    public String check_availability() {
         return "checking_rooms_availability";
     }
 
