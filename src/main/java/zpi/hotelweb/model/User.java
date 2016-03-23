@@ -4,12 +4,14 @@ package zpi.hotelweb.model;
  * Created by User1 on 24/02/2016.
  */
 
+import com.google.common.collect.Lists;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 
 @Entity
 @Table(name = "USER")
@@ -18,7 +20,7 @@ public class User implements UserDetails {
     private static final long serialVersionUID = -1171088670713800270L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID", unique = true, nullable = false)
+    @Column(name = "USER_ID", unique = true, nullable = false)
     private long id;
     @Column(name = "USERNAME")
     private String username;
@@ -48,6 +50,8 @@ public class User implements UserDetails {
     public void setPassword(String password) {
         this.password = password;
     }
+
+
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
