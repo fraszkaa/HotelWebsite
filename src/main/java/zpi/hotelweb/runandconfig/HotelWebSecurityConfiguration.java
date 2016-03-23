@@ -1,6 +1,8 @@
 package zpi.hotelweb.runandconfig;
 
+import org.h2.server.web.WebServlet;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.embedded.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
@@ -13,6 +15,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import zpi.hotelweb.model.AuthorityEnum;
 import zpi.hotelweb.services.UserService;
+
 
 /**
  * Created by User1 on 25/02/2016.
@@ -123,5 +126,12 @@ public class HotelWebSecurityConfiguration {
                     .ignoring()
                     .antMatchers("/resources/**").antMatchers("/register");
         }
+    }
+
+    @Bean
+    ServletRegistrationBean h2servletRegistration(){
+        ServletRegistrationBean registrationBean = new ServletRegistrationBean(new WebServlet());
+        registrationBean.addUrlMappings("/console/*");
+        return registrationBean;
     }
 }

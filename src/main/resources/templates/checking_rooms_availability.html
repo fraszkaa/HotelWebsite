@@ -5,7 +5,7 @@
     <title>Spring Core</title>
 
     <link rel="stylesheet" type="text/css" media="all"
-          href="../../css/gtvg.css" th:href="@{/css/gtvg.css}" />
+          href="../../css/gtvg.css" th:href="@{/css/gtvg.css}"/>
 
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css.bootstrap.min.cs"
           th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}"
@@ -15,6 +15,7 @@
             th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
 
     <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/lightbox.css" rel="stylesheet"/>
 
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
 
@@ -24,18 +25,18 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css"/>
 
 </head>
 <body>
 <script type="text/javascript">
-    $(function() {
+    $(function () {
         $('input[name="daterange_3os"]').daterangepicker();
     });
-    $(function() {
+    $(function () {
         $('input[name="daterange_2os"]').daterangepicker();
     });
-    $(document).ready(function() {
+    $(document).ready(function () {
         $("#sprawdz").click(function () {
             var value_2os = document.getElementsByName("daterange_2os")[0].value;
             var value_3os = document.getElementsByName("daterange_3os")[0].value;
@@ -59,8 +60,10 @@
             <li><a href="#" class="navbar-przyciski">Page 3</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="/#/register" class="navbar-przyciski"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="/#/login" class="navbar-przyciski"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="/#/register" class="navbar-przyciski"><span class="glyphicon glyphicon-user"></span> Sign
+                Up</a></li>
+            <li><a href="/#/login" class="navbar-przyciski"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+            </li>
         </ul>
     </div>
 </nav>
@@ -76,15 +79,17 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-6 col-md-6" style="text-align: center">
-            <img class="img-responsive img-thumbnail img-center" src="css/images/2os.jpg" id="two_people"/>
+            <a href="css/images/2os.jpg" data-title="Pokoj dwuosobowy" data-lightbox="Two"><img
+                    class="img-responsive img-thumbnail img-center" src="css/images/2os.jpg" id="two_people"/></a>
             <h4> Pokoj dwuosobowy </h4>
-            <input type="text" name="daterange_2os" id="dp2" value="01/05/2016 - 01/06/2015" />
+            <input type="text" name="daterange_2os" id="dp2" value="01/05/2016 - 01/06/2015"/>
 
         </div>
         <div class="col-xs-6 col-md-6" style="text-align: center">
-            <img class="img-responsive img-thumbnail img-center" src="css/images/3os.jpg"/>
-            <h4> Pokoj trzyosobowy </h4>
-            <input type="text" name="daterange_3os" id="dp3" value="01/05/2016 - 01/06/2015" />
+            <a href="css/images/3os.jpg" data-title="Pokoj trzyosobowy" data-lightbox="Two"><img
+                    class="img-responsive img-thumbnail img-center" src="css/images/3os.jpg"/></a>
+                <h4> Pokoj trzyosobowy </h4>
+                <input type="text" name="daterange_3os" id="dp3" value="01/05/2016 - 01/06/2015"/>
         </div>
 
         <br/><br/>
@@ -100,5 +105,6 @@
         <p id="kopirajt" class="text-muted">Copyright &copy; 2016 <a href="#">Hotel</a> - All Rights Reserved</p>
     </div>
 </footer>
+<script src="js/lightbox.js"></script>
 </body>
 </html>
