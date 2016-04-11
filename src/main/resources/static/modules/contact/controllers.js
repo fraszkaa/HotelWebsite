@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('Home')
+angular.module('Contact')
 
-    .controller('HomeController',
-        ['$scope', 'HomeService',
-            function ($scope, HomeService) {
+    .controller('ContactController',
+        ['$scope',
+            function ($scope) {
                /* $scope.ShowUser = function () {
                     HomeService.GetLoggedUser(function (response) {
                         if (response.success) {
@@ -17,7 +17,6 @@ angular.module('Home')
                 };*/
 
 
-                //$scope.ShowUser()
             }
         ]);
 

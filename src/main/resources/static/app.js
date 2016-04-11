@@ -4,6 +4,7 @@
 angular.module('Authentication', []);
 angular.module('Home', []);
 angular.module('Registration', []);
+angular.module('Contact', []);
 angular.module('BasicHttpAuthExample', [
         'Authentication',
         'Registration',
@@ -30,6 +31,10 @@ angular.module('BasicHttpAuthExample', [
             .when('/', {
                 controller: 'HomeController',
                 templateUrl: 'modules/home/home.html'
+            })
+            .when('/contact',{
+            controller: 'ContactController',
+            templateUrl: 'modules/contact/contact.html'
             });
 
             /*.otherwise({redirectTo: '/login'});*/
