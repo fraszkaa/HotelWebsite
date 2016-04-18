@@ -5,6 +5,7 @@ angular.module('Authentication', []);
 angular.module('Home', []);
 angular.module('Registration', []);
 angular.module('Contact', []);
+angular.module('Gallery', []);
 angular.module('BasicHttpAuthExample', [
         'Authentication',
         'Registration',
@@ -35,7 +36,24 @@ angular.module('BasicHttpAuthExample', [
             .when('/contact',{
             controller: 'ContactController',
             templateUrl: 'modules/contact/contact.html'
-            });
+            })
+             .when('/gallery',{
+                    controller: 'GalleryController',
+                    templateUrl: 'modules/gallery/gallery.html'
+                    })
+            .when('/restaurant',{
+                    controller: 'GalleryController',
+                    templateUrl: 'modules/gallery/restaurant.html'
+                    })
+             .when('/meeting',{
+                                controller: 'GalleryController',
+                                templateUrl: 'modules/gallery/meeting.html'
+                                })
+              .when('/room',{
+                                 controller: 'GalleryController',
+                                 templateUrl: 'modules/gallery/room.html'
+                                 });
+
 
             /*.otherwise({redirectTo: '/login'});*/
     }])
